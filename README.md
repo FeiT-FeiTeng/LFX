@@ -10,7 +10,7 @@
   <b>&middot;</b>
   Buyin&nbsp;Deng</a> 
   <b>&middot;</b>
-  Luo&nbsp;Kai</a> 
+  <a href="https://github.com/xifen523" target="_blank">Kai&nbsp;Luo</a> 
   <b>&middot;</b>
   Zheng&nbsp;Boyuan</a> 
 
