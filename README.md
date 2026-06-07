@@ -1,24 +1,35 @@
 <div align="center">
-<p align="center">LF Tracy: A Unified Single-Pipeline Approach for Salient Object Detection in Light Field Cameras
+<p align="center">LFX: Towards Unified Light Field Dense Semantic Segmentation and Salient Object Detection
 
 <br>
 
 <div align="center">
   <a href="https://www.researchgate.net/profile/Fei-Teng-42" target="_blank">Fei&nbsp;Teng</a> 
   <b>&middot;</b>
-  <a href="https://www.researchgate.net/profile/Jiaming-Zhang-10" target="_blank">Jiaming&nbsp;Zhang</a> 
+  Lingxin&nbsp;Huang</a> 
   <b>&middot;</b>
-  Liu&nbsp;Jiawei</a> 
+  Buyin&nbsp;Deng</a> 
+  <b>&middot;</b>
+  Luo&nbsp;Kai</a> 
+  <b>&middot;</b>
+  Zheng&nbsp;Boyuan</a> 
+
+  <b>&middot;</b>
+  Fang&nbsp;Zheng</a> 
+  <b>&middot;</b>
+  Zheng&nbsp;Hong</a> 
   <b>&middot;</b>
   <a href="https://www.researchgate.net/profile/Kunyu-Peng" target="_blank">Kunyu&nbsp;Peng</a> 
   <b>&middot;</b>
-  <a href="https://www.researchgate.net/profile/Zhiyong-Li-3" target="_blank">Zhiyong&nbsp;Li</a> 
+  <a href="https://www.researchgate.net/profile/Jiaming-Zhang-10" target="_blank">Jiaming&nbsp;Zhang</a> 
+  <b>&middot;</b>
+  Wang&nbsp;Yaonan</a> 
   <b>&middot;</b>
   <a href="https://www.researchgate.net/profile/Kailun-Yang" target="_blank">Kailun&nbsp;Yang</a> 
 
  <br>
 
-  <a href="https://browse.arxiv.org/abs/2401.16712" target="_blank">Paper</a>
+  <a href="https://arxiv.org/abs/2503.00747" target="_blank">Paper</a>
 
 # 
 
@@ -30,9 +41,9 @@
 </div>
 
 ### Update
-- 2024.02.26 Code Version1 is released.
-- 2024.02.01 Init repository.
-- 2024.1.31 Release the [arXiv](https://arxiv.org/abs/2401.16712) version.
+- 2026.06.10 Code is released (Soon).
+- 2026.06.05 Init repository.
+- 2026.06.05 Release the [arXiv]([https://arxiv.org/abs/2503.00747) version.
 
 
 
@@ -43,6 +54,6 @@
 
 ### Abstract
 
-Leveraging the rich information extracted from light field (LF) cameras is instrumental for dense prediction tasks. However, adapting light field data to enhance Salient Object Detection (SOD) still follows the traditional RGB methods and remains under-explored in the community. Previous approaches predominantly employ a custom two-stream design to discover the implicit angular feature within light field cameras, leading to significant information isolation between different LF representations. In this study, we propose an efficient paradigm (LF Tracy) to address this limitation. We eschew the conventional specialized fusion and decoder architecture for a dual-stream backbone in favor of a unified, single-pipeline approach. This comprises firstly a simple yet effective data augmentation strategy called MixLD to bridge the connection of spatial, depth, and implicit angular information under different LF representations. A highly efficient information aggregation (IA) module is then introduced to boost asymmetric feature-wise information fusion. Owing to this innovative approach, our model surpasses the existing state-of-the-art methods, particularly demonstrating a 23% improvement over previous results on the latest large-scale PKU dataset. By utilizing only 28.9M parameters, the model achieves a 10% increase in accuracy with 3M additional parameters compared to its backbone using RGB images and an 86% rise to its backbone using LF images.
+Light field cameras capture multi-view observations within a single exposure. However, existing studies are typically tailored to specific LF representations, leaving the field without a unified learning framework. To bridge this gap, we present LFX, the first unified framework for LF perception. LFX establishes a representation-invariant feature modulation space, enabling it to adapt to heterogeneous LF representations and diverse perception tasks. Specifically, we propose Field-of-Parallax Angular Subspace Modeling (FoP-ASM), which assigns an independent angular marker to each auxiliary view, enabling view-wise independent modeling. Meanwhile, shared manifold subspace constraints and regularization losses are proposed to enforce globally consistent semantic modulation across views. Extensive evaluations across three LF benchmarks show that LFX achieves state-of-the-art results across distinct LF representations, outperforming representation-specific methods by up to 12% and 20% with 0.029/0.027 MAE for salient object detection, and achieving 84.37 mIoU for semantic segmentation.
 
 ### Method
